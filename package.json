@@ -8,7 +8,7 @@
     "dev": "nodemon index"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gustavo Cysneiros",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
