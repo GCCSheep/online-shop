@@ -1,5 +1,5 @@
 function getSignup(req, res) {
-
+    
 }
 
 function getLogin(req, res) {
