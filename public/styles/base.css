@@ -3,11 +3,12 @@
 }
 
 html {
-    font-family: 'Montserrat', 'sans-serif';   
+    font-family: 'Montserrat', 'sans-serif';
+    --color-primary: #e68a19;
 }
 
 body {
-    background-color: #222;
+    background-color: #111;
     color: whitesmoke;
     margin: 0;
 }
@@ -27,14 +28,14 @@ ol {
 
 a {
     text-decoration: none;
-    color: #e68a19;
+    color: var(--color-primary);
 }
 
 .btn {
     cursor: pointer;
     font: inherit;
     padding: 0.5rem 1.5rem;
-    background-color: #e68a19;
+    background-color: var(--color-primary);
     color: whitesmoke;
     border: none;
     border-radius: 5px;

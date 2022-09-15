@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 25rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #222;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form a {
+    color: var(--color-primary);
+}
+
+form a:hover,
+form a:active {
+    filter: brightness(0.9);
+}
