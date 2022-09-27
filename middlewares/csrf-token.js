@@ -1,5 +1,5 @@
 function addCsrfToken(req, res, next) {
-    res.local.csrfToken = req.csrfToken();
+    res.locals.csrfToken = req.csrfToken();
     next();
 }
 
