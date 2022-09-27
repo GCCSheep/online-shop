@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 const db = require('./data/database');
 const addCsrfTokenMiddleware = require('./middlewares/csrf-token');
+const errorHandlerMiddleWare = require('./middlewares/error-handler');
 const authRoutes = require('./routes/auth.routes');
 
 app.set('view engine', 'ejs');
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(csrf());
 app.use(addCsrfTokenMiddleware);
 app.use(authRoutes);
+app.use(errorHandlerMiddleWare);
 
 db.connectToDatabase()
     .then(() =>
